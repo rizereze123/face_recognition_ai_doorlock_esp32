@@ -1,4 +1,4 @@
-# Hand Gesture Recognition API
+# Face Recognition API
 
 Aplikasi ini mendeteksi wajah menggunakan webcam/kamera dan mengirimkan perintah ke ESP32 melalui serial.
 
