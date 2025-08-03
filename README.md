@@ -14,14 +14,13 @@ Aplikasi ini mendeteksi wajah menggunakan webcam/kamera dan mengirimkan perintah
    ```
 3. Aktifkan Env Virtual dengan Cara masuk kedalam Powershell VSCode
    ```bash
-   cd env/Scripts
-   ./Activate.ps1
+   env\Scripts\Activate.ps1
    ```  
 4. Install dependensi dengan perintah:
    
    ```bash
-   pip install -r requirements.txt
    pip install dlib-19.22.99-cp39-cp39-win_amd64.whl
+   pip install -r requirements.txt
    ```
 
 ## Penggunaan
