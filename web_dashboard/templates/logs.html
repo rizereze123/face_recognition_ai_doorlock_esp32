@@ -16,6 +16,7 @@
                             <th>No</th>
                             <th>Nama</th>
                             <th>Waktu Akses</th>
+                            <th>Capture</th>
                         </tr>
                     </thead>
                     <tbody>
@@ -24,6 +25,16 @@
                             <td>{{ loop.index }}</td>
                             <td>{{ log[0] }}</td>
                             <td>{{ log[1] }}</td>
+                            <td>
+                                {% if log[2] %}
+                                    <a href="{{ url_for('log_capture_file', filename=log[2]) }}" target="_blank">
+                                        <img src="{{ url_for('log_capture_file', filename=log[2]) }}" 
+                                            alt="Foto Log" style="width:60px; height:auto;">
+                                    </a>
+                                {% else %}
+                                    Tidak ada foto
+                                {% endif %}
+                            </td>
                         </tr>
                         {% endfor %}
                     </tbody>
