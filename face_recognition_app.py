@@ -210,7 +210,7 @@ def face_recognition_step(verified_user):
         process_this_frame = not process_this_frame
         
 
-        if (time.time() - start_time) > 15:  # timeout 10 detik
+        if (time.time() - start_time) > 10:  # timeout 10 detik
             messagebox.showerror("Error", "Waktu habis untuk scan wajah!")
             break
 
