@@ -231,8 +231,10 @@ root = tk.Tk()
 root.title("Smart Doorlock")
 root.geometry(WINDOW_SIZE)
 
-label = tk.Label(root, text="Mulai Verifikasi Smart Doorlock", font=("Arial", 14))
+label = tk.Label(root, text="Verifikasi", font=("Arial", 14))
+label2 = tk.Label(root, text="AI-Driven Biometric Smart Doorlock with Solenoid Security Mechanism", font=("Arial", 10))
 label.pack(pady=20)
+label2.pack(pady=20)
 
 btn_mulai = tk.Button(root, text="Mulai", font=("Arial", 12), command=start_verification)
 btn_mulai.pack(pady=20)
